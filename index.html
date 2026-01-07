@@ -9,39 +9,73 @@
 <body>
 
 <header class="top-bar">
-  <img src="assets/fesd.jpg" class="logo" alt="FESD16">
+  <div class="header-left">
+    <img src="assets/fesd.jpg" class="logo" alt="FESD-16">
+  </div>
 
-  <div class="buttons">
+  <nav class="buttons">
     <a href="fesd.html" class="btn">FESD16</a>
     <a href="agm.html" class="btn">Equipo AGM</a>
-  </div>
+  </nav>
 </header>
 
 <main>
+
   <section class="news">
     <h2>Noticias de la Semana</h2>
+
     <div class="news-grid">
-      <div class="news-card">Noticia 1</div>
-      <div class="news-card">Noticia 2</div>
-      <div class="news-card">Noticia 3</div>
-      <div class="news-card">Noticia 4</div>
-      <div class="news-card">Noticia 5</div>
-      <div class="news-card">Noticia 6</div>
-      <div class="news-card">Noticia 7</div>
+      <div class="news-card">
+        <h3>Tema</h3>
+        <p>Subtema o descripción breve de la noticia.</p>
+      </div>
+
+      <div class="news-card">
+        <h3>Tema</h3>
+        <p>Subtema o descripción breve de la noticia.</p>
+      </div>
+
+      <div class="news-card">
+        <h3>Tema</h3>
+        <p>Subtema o descripción breve de la noticia.</p>
+      </div>
+
+      <div class="news-card">
+        <h3>Tema</h3>
+        <p>Subtema o descripción breve de la noticia.</p>
+      </div>
+
+      <div class="news-card">
+        <h3>Tema</h3>
+        <p>Subtema o descripción breve de la noticia.</p>
+      </div>
+
+      <div class="news-card">
+        <h3>Tema</h3>
+        <p>Subtema o descripción breve de la noticia.</p>
+      </div>
+
+      <div class="news-card">
+        <h3>Tema</h3>
+        <p>Subtema o descripción breve de la noticia.</p>
+      </div>
     </div>
   </section>
 
   <section class="comments">
     <h2>Comentarios Anónimos</h2>
-    <textarea id="commentText" placeholder="Escribe tu comentario..."></textarea>
-    <button onclick="sendComment()">Enviar</button>
 
-    <div id="commentsList"></div>
+    <textarea id="commentText" placeholder="Escribe tu comentario de forma respetuosa..."></textarea>
+    <button onclick="sendComment()">Enviar comentario</button>
+
+    <div id="commentsList" class="comments-list"></div>
   </section>
+
 </main>
 
 <footer class="footer">
   <a href="redes.html" class="social-btn">🌐 Redes Sociales</a>
+  <p>© FESD-16</p>
 </footer>
 
 <script type="module" src="app.js"></script>
