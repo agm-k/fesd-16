@@ -23,13 +23,12 @@ body {
   justify-content: space-between;
 }
 
-.logo {
-  height: 55px;
-  width: auto;
-  max-width: 100%;
-  display: block;
+.site-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
 }
-
 
 
 .nav-buttons {
