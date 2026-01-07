@@ -4,72 +4,100 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: white;
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #000000;
 }
 
 .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 15px 25px;
   background: #0033a0; 
   flex-wrap: wrap;
 }
 
 .logo {
-  height: 45px;
+  height: 50px;
 }
 
 .buttons {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .btn {
   background: white;
   color: black;
-  padding: 10px 16px;
+  padding: 10px 18px;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
+  transition: background 0.2s;
 }
 
+.btn:hover {
+  background: #e6e6e6;
+}
+
+/* MAIN *
 main {
-  padding: 20px;
+  padding: 25px;
 }
 
-.news h2 {
-  margin-bottom: 15px;
+.news h2,
+.comments h2 {
+  font-size: 1.6rem;
+  border-left: 6px solid #0033a0;
+  padding-left: 12px;
+  margin-bottom: 20px;
 }
 
 .news-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 20px;
 }
 
 .news-card {
   background: white;
-  border: 2px solid #0033a0;
-  padding: 15px;
-  border-radius: 8px;
+  border: 1.5px solid #0033a0;
+  border-radius: 10px;
+  padding: 18px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+}
+
+.news-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .comments {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .comments textarea {
   width: 100%;
-  height: 80px;
-  padding: 10px;
+  height: 90px;
+  padding: 12px;
+  font-size: 1rem;
 }
 
 .comments button {
   margin-top: 10px;
-  padding: 10px;
+  padding: 12px 20px;
   background: #0033a0;
   color: white;
   border: none;
@@ -77,39 +105,38 @@ main {
   cursor: pointer;
 }
 
+.comments-list p {
+  background: #f5f5f5;
+  padding: 10px;
+  border-left: 4px solid #0033a0;
+  margin-top: 10px;
+}
+
 .footer {
   background: #0033a0;
-  padding: 20px;
+  color: white;
   text-align: center;
-  margin-top: 30px;
+  padding: 25px;
+  margin-top: 40px;
 }
 
 .social-btn {
   background: white;
   color: black;
-  padding: 12px 20px;
+  padding: 12px 22px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .news-grid {
     grid-template-columns: 1fr;
-  }
-
-  .top-bar {
-    flex-direction: column;
-    gap: 10px;
   }
 
   .buttons {
     width: 100%;
     justify-content: center;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
+    margin-top: 10px;
   }
 }
