@@ -25,7 +25,10 @@ body {
 
 .logo {
   height: 55px;
+  width: auto;
+  display: block;
 }
+
 
 .nav-buttons {
   display: flex;
